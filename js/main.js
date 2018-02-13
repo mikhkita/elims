@@ -40,6 +40,29 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
+
+    $('.b-slider-content').slick({
+        arrows: true,
+        prevArrow: '<div class="b-block"><div class="arrow-cont icon-left-arrow"></div></div>',
+        nextArrow: '<div class="b-block"><div class="arrow-cont icon-right-arrow"></div></div>',
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: '.b-slider-back',
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+    $('.b-slider-back').slick({
+        arrows: false,
+        dots: false,
+        asNavFor: '.b-slider-content',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+    });
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
