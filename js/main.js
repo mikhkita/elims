@@ -55,6 +55,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000
     });
+
     $('.b-slider-back').slick({
         arrows: false,
         dots: false,
@@ -62,6 +63,22 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 800,
+    });
+
+    $('.b-photo-slider').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        variableWidth: true,
+        centerMode: true,
+    });
+    
+    $('.b-photo-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      console.log(nextSlide);
     });
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
