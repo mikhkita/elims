@@ -41,7 +41,7 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
-    $('.b-slider-content').slick({
+    $(".b-slider-content").slick({
         arrows: true,
         prevArrow: '<div class="b-block"><div class="arrow-cont icon-left-arrow"></div></div>',
         nextArrow: '<div class="b-block"><div class="arrow-cont icon-right-arrow"></div></div>',
@@ -56,7 +56,7 @@ $(document).ready(function(){
         autoplaySpeed: 5000
     });
 
-    $('.b-slider-back').slick({
+    $(".b-slider-back").slick({
         arrows: false,
         dots: false,
         asNavFor: '.b-slider-content',
@@ -65,20 +65,40 @@ $(document).ready(function(){
         speed: 800,
     });
 
-    $('.b-photo-slider').slick({
+    $('.b-photo-slider').on('init', function(event, slick){
+        setTimeout(function(){
+            $(".prev-slide, .next-slide").removeClass("prev-slide next-slide");
+            $(".slick-current").prev().addClass("prev-slide");
+            $(".slick-current").next().addClass("next-slide");
+        },10);
+    });
+
+    $(".b-photo-slider").slick({
         arrows: false,
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 800,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 5000,
         variableWidth: true,
         centerMode: true,
     });
     
-    $('.b-photo-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-      console.log(nextSlide);
+    $(".b-photo-slider").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        setTimeout(function(){
+            $(".prev-slide, .next-slide").removeClass("prev-slide next-slide");
+            $(".slick-current").prev().addClass("prev-slide");
+            $(".slick-current").next().addClass("next-slide");
+        },10);
+    });
+
+    $("body").on('click', '.prev-slide', function(){
+        $(".b-photo-slider").slick('slickPrev');
+    });
+
+    $("body").on('click', '.next-slide', function(){
+        $(".b-photo-slider").slick('slickNext');
     });
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
