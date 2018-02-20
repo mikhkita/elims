@@ -416,6 +416,7 @@ h3{
 .b-slider{
 	position: relative;
 	height: 600px;
+	overflow: hidden;
 }
 	.slick-slide{
 		height: 600px;
