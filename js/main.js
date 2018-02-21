@@ -11,6 +11,7 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+        footerToBottom();
     }
     $(window).resize(resize);
     resize();
@@ -40,6 +41,23 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
+
+    function footerToBottom(){
+        var browserHeight = window.innerHeight,
+            footerOuterHeight = !!$('.b-footer').outerHeight() ? $('.b-footer').outerHeight(true) : 0,
+            headerHeight = 0;
+        if($('.b-header').length){
+            headerHeight = $('.b-header').outerHeight(true);
+        }else{
+            headerHeight = $('.b-header-inner').outerHeight(true);
+        }
+        var minHeight = browserHeight - footerOuterHeight - headerHeight;
+        if(minHeight >= 0){
+            $('.b-content').css({
+                'min-height': minHeight
+            });
+        }  
+    };
 
     $(".b-slider-content").slick({
         arrows: true,
