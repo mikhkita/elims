@@ -61,8 +61,8 @@ $(document).ready(function(){
 
     $(".b-slider-content").slick({
         arrows: true,
-        prevArrow: '<div class="b-block"><div class="arrow-cont icon-left-arrow"></div></div>',
-        nextArrow: '<div class="b-block"><div class="arrow-cont icon-right-arrow"></div></div>',
+        prevArrow: '<div class="b-block"><div class="b-slider-arrows icon-left-arrow"></div></div>',
+        nextArrow: '<div class="b-block"><div class="b-slider-arrows icon-right-arrow"></div></div>',
         dots: true,
         infinite: true,
         speed: 800,
@@ -83,7 +83,7 @@ $(document).ready(function(){
         speed: 800,
     });
 
-    $('.b-photo-slider').on('init', function(event, slick){
+    $(".b-photo-slider").on('init', function(event, slick){
         setTimeout(function(){
             $(".prev-slide, .next-slide").removeClass("prev-slide next-slide");
             $(".slick-current").prev().addClass("prev-slide");
@@ -92,7 +92,9 @@ $(document).ready(function(){
     });
 
     $(".b-photo-slider").slick({
-        arrows: false,
+        arrows: true,
+        prevArrow: '<div class="b-block"><div class="b-photo-arrows icon-left-arrow"></div></div>',
+        nextArrow: '<div class="b-block"><div class="b-photo-arrows icon-right-arrow"></div></div>',
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
