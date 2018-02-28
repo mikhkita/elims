@@ -207,6 +207,13 @@ h3{
 	margin-bottom: 8px;
 }
 
+h4{
+	color: #434343;
+	font-family: "RobotoSlab-Bold";
+	font-size: 18px;
+	line-height: 28px;
+}
+
 .blue{
 	color: #3c5d9f;
 }
@@ -340,7 +347,7 @@ h3{
 		line-height: 26px;
 		margin-bottom: 32px;
 	}
-		.b-text *:last-child{
+		.b-text > *:last-child{
 			margin-bottom: 0;
 		}
 	.b-text b{
@@ -660,10 +667,10 @@ h3{
 }
 
 .b-services{
-	margin-bottom: 20px;
+
 }
 	.b-services-list{
-		margin-bottom: 40px;
+
 	}
 		.b-services-item{
 			display: inline-block;
@@ -703,6 +710,10 @@ h3{
 					font-size: 15px;
 					line-height: 28px;
 				}
+
+			.b-services .b-btn{
+				margin-top: 40px;
+			}
 
 		.b-statistics{
 			float: right;
@@ -755,7 +766,7 @@ h3{
 				}
 
 .b-about{
-	padding: 70px 0;
+	padding: 90px 0 70px 0;
 	background-position: left top;
 	background-image: url(../i/line-white-down.png);
 	background-repeat: repeat-x;
@@ -1213,6 +1224,62 @@ h3{
 		.specialist-post{
 			line-height: 24px;
 		}
+
+/*-------Детальная-------*/
+
+.b-side-left{
+	width: calc(100% - 294px);
+    float: left;
+}
+
+.b-side-right{
+	width: 270px;
+	float: right;
+	color: #FFF;
+	border-radius: 3px;
+	padding: 32px 24px 40px 24px;
+	background-image: url(../i/statistics-back.svg), -webkit-linear-gradient(135deg, #4769a7 0%, #3b4674 100%);
+	background-image: url(../i/statistics-back.svg), -moz-linear-gradient(135deg, #4769a7 0%, #3b4674 100%);
+	background-image: url(../i/statistics-back.svg), -o-linear-gradient(135deg, #4769a7 0%, #3b4674 100%);
+	background-image: url(../i/statistics-back.svg), -ms-linear-gradient(135deg, #4769a7 0%, #3b4674 100%);
+	background-image: url(../i/statistics-back.svg), linear-gradient(135deg, #4769a7 0%, #3b4674 100%);
+	background-position: 45% 88%;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+	.b-side-content{
+		padding: 0 8px;
+	}
+		.b-side-right h3{
+			color: #FFF;
+			margin-bottom: 26px;
+		}
+		.b-side-address{
+			position: relative;
+			padding-left: 32px;
+			margin-bottom: 16px;
+		}
+			.b-side-address .icon-pin {
+			    position: absolute;
+			    top: 3px;
+			    left: 0;
+			}
+			.b-side-address .icon-pin:before{
+				color: #FFF;
+			}
+			.b-side-address h4{
+				color: #FFF;
+				margin-bottom: 2px;
+			}
+			.b-side-right a{
+				color: #FFF;
+			}
+	.b-side-right .b-btn{
+		margin-top: 24px;
+		min-width: 0;
+	}
 
 /*-------------------*/
 
