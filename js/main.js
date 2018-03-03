@@ -121,12 +121,6 @@ $(document).ready(function(){
         $(".b-photo-slider").slick('slickNext');
     });
 
-    /*if( !isMobile && !isSmallTablet && $('.stick').length) {
-        $(window).load(function(){
-            $(".stick").stick_in_parent();  
-        }); 
-    }*/
-
     $(".b-side-right").stick_in_parent({offset_top: 24});
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);

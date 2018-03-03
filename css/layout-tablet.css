@@ -1,0 +1,24 @@
+body {
+	min-width: 750px;
+}
+
+.b-block{
+	width: calc(100% - 64px);
+}
+
+/*---------------------*/
+
+.b-statistics {
+    padding: 28px 32px 32px;
+}
+	.b-statistics h2{
+		 margin-bottom: 24px;
+	}
+		.b-statistics-item {
+		    margin-bottom: 24px;
+		}
+
+	
+@media screen and (max-width: 1020px){
+	
+}

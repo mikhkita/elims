@@ -1,0 +1,13 @@
+body {
+	min-width: 320px;
+}
+
+.b-block{
+	width: calc(100% - 64px);
+}
+
+/*---------------------------*/
+
+@media screen and (max-width: 550px){
+	
+}

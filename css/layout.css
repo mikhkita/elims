@@ -686,12 +686,12 @@ h4{
 		.b-services-item:nth-child(4n){
 			margin-right: 0;
 		}
-		.b-services-item:last-child,
+		/*.b-services-item:last-child,
 		.b-services-item:nth-last-child(2),
 		.b-services-item:nth-last-child(3),
 		.b-services-item:nth-last-child(4){
 			margin-bottom: 0;
-		}
+		}*/
 			.b-services-img{
 				display: inline-block;
 			    width: 140px;
@@ -714,9 +714,9 @@ h4{
 					line-height: 28px;
 				}
 
-			.b-services .b-btn{
+			/*.b-services .b-btn{
 				margin-top: 40px;
-			}
+			}*/
 
 		.b-statistics{
 			float: right;
@@ -746,6 +746,7 @@ h4{
 			.b-statistics-half:first-child{
 				float: left;
 				width: 53%;
+				padding-right: 16px;
 			}
 
 			.b-statistics-half:last-child{
@@ -1328,10 +1329,4 @@ h4{
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
-}	
-@media screen and (max-width: 1250px){
-	
-}
-@media screen and (max-width: 1020px){
-
 }
