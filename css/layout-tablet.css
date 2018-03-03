@@ -3,22 +3,63 @@ body {
 }
 
 .b-block{
-	width: calc(100% - 64px);
+	width: calc(100% - 48px);
 }
 
 /*---------------------*/
 
-.b-statistics {
-    padding: 28px 32px 32px;
+.b-services{
+
 }
-	.b-statistics h2{
-		 margin-bottom: 24px;
+	.b-services-list{
+
 	}
-		.b-statistics-item {
-		    margin-bottom: 24px;
+		.b-services-item{
+			width: calc(100%/3 - 20px);
 		}
+		.b-services-item:nth-child(4n){
+			margin-right: 24px;
+		}
+		.b-services-item:nth-child(3n){
+			margin-right: 0;
+		}
+
+.b-statistics {
+    width: calc(100%/3*2 - 9px);
+}
 
 	
 @media screen and (max-width: 1020px){
-	
+	.b-photo-slider{
+		height: 550px;
+	}
+		.b-photo-item{
+			width: 1152px;
+			height: 550px;
+		}
+			.b-photo-img{
+				height: 550px;
+			}
+
+	.b-photo-arrows.icon-left-arrow{
+		top: 248px;
+		left: 0;
+	}
+	.b-photo-arrows.icon-right-arrow{
+		top: -302px;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 870px){
+
+	.b-statistics {
+	    padding: 28px 32px 32px;
+	}
+		.b-statistics h2{
+			 margin-bottom: 24px;
+		}
+			.b-statistics-item {
+			    margin-bottom: 24px;
+			}
 }
