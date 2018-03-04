@@ -97,6 +97,19 @@ $(document).ready(function(){
         }  
     };
 
+    if(isRetina && !isMobile){
+        $("*[data-retina]").each(function(){
+            var $this = $(this),
+                img = new Image(),
+                src = $this.attr("data-retina");
+
+            img.onload = function(){
+                $this.css("background-image", 'url(' + $this.attr("data-retina") + ')');
+            };
+            img.src = src;
+        });
+    }
+
     $(".b-slider-content").slick({
         arrows: true,
         prevArrow: '<div class="b-block"><div class="b-slider-arrows icon-left-arrow"></div></div>',
