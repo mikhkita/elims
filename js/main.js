@@ -1,4 +1,9 @@
-$(document).ready(function(){	
+$(document).ready(function(){
+    var isRetina = retina(),
+        isDesktop = false,
+        isTablet = false,
+        isMobile = false;
+
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
             myWidth = window.innerWidth;
@@ -11,6 +16,27 @@ $(document).ready(function(){
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
         }
+
+        if( myWidth > 1023 ){
+            isDesktop = true;
+            isTablet = false;
+            isMobile = false;
+        }else if( myWidth > 767 ){
+            isDesktop = false;
+            isTablet = true;
+            isMobile = false;
+        }else{
+            isDesktop = false;
+            isTablet = false;
+            isMobile = true;
+        }
+
+        if(isDesktop){
+            $(".b-side-right").stick_in_parent({offset_top: 24});
+        }else{
+            $(".b-side-right").trigger("sticky_kit:detach");
+        }
+
         footerToBottom();
     }
     $(window).resize(resize);
@@ -41,6 +67,18 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
+
+    function retina(){
+        var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
+            (min--moz-device-pixel-ratio: 1.5),\
+            (-o-min-device-pixel-ratio: 3/2),\
+            (min-resolution: 1.5dppx)";
+        if (window.devicePixelRatio > 1)
+            return true;
+        if (window.matchMedia && window.matchMedia(mediaQuery).matches)
+            return true;
+        return false;
+    }
 
     function footerToBottom(){
         var browserHeight = window.innerHeight,
@@ -145,8 +183,6 @@ $(document).ready(function(){
     $("body").on('click', '.next-slide', function(){
         $(".b-photo-slider").slick('slickNext');
     });
-
-    $(".b-side-right").stick_in_parent({offset_top: 24});
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {

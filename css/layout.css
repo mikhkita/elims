@@ -1130,6 +1130,13 @@ h4{
 			    margin-left: 7px;
 			}
 
+/*--------Услуги--------*/
+
+.inner .b-services-item:last-child,
+.inner .b-services-item:nth-last-child(2){
+	margin-bottom: 0;
+}
+
 /*------Специалисты-------*/
 
 .b-header-back{
@@ -1215,10 +1222,11 @@ h4{
 		.specialist-img{
 			width: 100%;
 			height: 400px;
-			background-position: 50% 50%;
+			background-position: 50% 0;
 	    	background-repeat: no-repeat;
 	   		background-size: cover;
 			margin-bottom: 20px;
+			border-radius: 3px;
 		}
 		.specialist-name{
 			line-height: 30px;
