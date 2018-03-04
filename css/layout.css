@@ -914,6 +914,7 @@ h4{
 
 .b-photo{
 	position: relative;
+	overflow: hidden;
 }
 	.b-photo-slider{
 		height: 700px;
@@ -969,7 +970,7 @@ h4{
 	.b-reviews-list .slick-dots{
 		bottom: -40px;
 	}
-	
+
 	.b-review{
 		float: left;
 		text-align: center;
