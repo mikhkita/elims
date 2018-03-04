@@ -28,13 +28,22 @@ body {
     width: calc(100%/3*2 - 9px);
 }
 
+.b-photo-item{
+	width: 85vw;
+}
+
+.b-photo-arrows.icon-left-arrow{
+	left: 70px;
+}
+.b-photo-arrows.icon-right-arrow{
+	right: 70px;
+}
 	
 @media screen and (max-width: 1020px){
 	.b-photo-slider{
 		height: 550px;
 	}
 		.b-photo-item{
-			width: 1152px;
 			height: 550px;
 		}
 			.b-photo-img{
@@ -43,11 +52,18 @@ body {
 
 	.b-photo-arrows.icon-left-arrow{
 		top: 248px;
-		left: 0;
+		left: 50px;
 	}
 	.b-photo-arrows.icon-right-arrow{
 		top: -302px;
-		right: 0;
+		right: 50px;
+	}
+
+	.b-review{
+		display: inline-block;
+		width: calc(100%/2 - 18px);
+		margin-right: 0;
+		padding: 0 12px;
 	}
 }
 

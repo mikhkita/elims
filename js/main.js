@@ -112,6 +112,31 @@ $(document).ready(function(){
             $(".slick-current").next().addClass("next-slide");
         },10);
     });
+    
+    $(".b-reviews-list").slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1020,
+              settings: {
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 551,
+              settings: {
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
 
     $("body").on('click', '.prev-slide', function(){
         $(".b-photo-slider").slick('slickPrev');
