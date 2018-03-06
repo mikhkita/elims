@@ -8,6 +8,23 @@ body {
 
 /*---------------------*/
 
+.b-menu-list{
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+	.b-menu-list li{
+		float: none;
+		display: table-cell;
+	}
+		.b-menu-list li a{
+			padding: 15px 0 17px 0;
+		}
+
+		.b-menu-list li:last-child{
+			float: none;
+		}
+
 .b-services{
 
 }
@@ -32,10 +49,10 @@ body {
 	width: 85vw;
 }
 
-.b-photo-arrows.icon-left-arrow{
+.b-photo .b-photo-arrows.icon-left-arrow{
 	left: 70px;
 }
-.b-photo-arrows.icon-right-arrow{
+.b-photo .b-photo-arrows.icon-right-arrow{
 	right: 70px;
 }
 
@@ -57,21 +74,38 @@ body {
 }
 	
 @media screen and (max-width: 1020px){
-	.b-photo-slider{
+
+	.b-menu{
+		min-height: 56px;
+		padding: 0 24px;
+	}
+	.b-menu .burger-menu{
+		float: left;
+		display: inline-block;
+		margin-top: 16px;
+	}
+	.b-menu .b-btn-red{
+		min-width: 203px;
+		float: right;
+		display: inline-block;
+		padding: 10px 20px 12px 20px;
+		margin-top: 9px;
+	}
+	.b-menu-list{
+		display: none;
+	}
+
+	.b-photo-slider,
+	.b-photo-item,
+	.b-photo-img{
 		height: 550px;
 	}
-		.b-photo-item{
-			height: 550px;
-		}
-			.b-photo-img{
-				height: 550px;
-			}
 
-	.b-photo-arrows.icon-left-arrow{
+	.b-photo .b-photo-arrows.icon-left-arrow{
 		top: 248px;
 		left: 50px;
 	}
-	.b-photo-arrows.icon-right-arrow{
+	.b-photo .b-photo-arrows.icon-right-arrow{
 		top: -302px;
 		right: 50px;
 	}
@@ -111,6 +145,18 @@ body {
 	    float: left;
 	    width: 50%;
 	    padding-right: 24px;
+	}
+
+	.b-footer-copyright {
+	    margin-right: 60px;
+	}
+
+	.b-review{
+		padding: 0 50px;
+	}
+
+	.b-footer-menu{
+		display: none;
 	}
 }
 

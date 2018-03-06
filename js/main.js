@@ -110,6 +110,40 @@ $(document).ready(function(){
         });
     }
 
+    var slideoutLeft = new Slideout({
+        'panel': document.getElementById('panel-page'),
+        'menu': document.getElementById('mobile-menu'),
+        'side': 'left',
+        'padding': 300,
+        'tolerance': 70
+    });
+
+    $('.burger-menu').click(function() {
+        slideoutLeft.open();
+        $('.mobile-menu').removeClass("hide");
+        $('.b-menu-overlay').show();
+        return false;
+    });
+
+    slideoutLeft.disableTouch();
+
+    slideoutLeft.on('beforeopen', function() {
+        slideoutLeft.enableTouch();
+    }).on('beforeclose', function() {
+        slideoutLeft.disableTouch();
+        $(".b-menu-overlay").hide();
+    }).on('close', function() {
+        console.log("slideoutLeft");
+        $(window).scroll();
+    });
+
+    $('.b-menu-overlay').on('click', function() {
+        if(slideoutLeft.isOpen())
+            slideoutLeft.close();
+        $(".b-menu-overlay").hide();
+        return false;
+    });
+
     $(".b-slider-content").slick({
         arrows: true,
         prevArrow: '<div class="b-block"><div class="b-slider-arrows icon-left-arrow"></div></div>',
@@ -167,21 +201,29 @@ $(document).ready(function(){
     $(".b-reviews-list").slick({
         arrows: false,
         dots: false,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         responsive: [
             {
               breakpoint: 1020,
               settings: {
-                dots: true,
+                arrows: true,
+                infinite: true,
+                prevArrow: '<div class="b-photo-arrows icon-left-arrow"></div>',
+                nextArrow: '<div class="b-photo-arrows icon-right-arrow"></div>',
                 slidesToShow: 2,
                 slidesToScroll: 1
               }
             },
             {
-              breakpoint: 666,
+              breakpoint: 768,
               settings: {
-                dots: true,
+                arrows: true,
+                infinite: true,
+                prevArrow: '<div class="b-photo-arrows icon-left-arrow"></div>',
+                nextArrow: '<div class="b-photo-arrows icon-right-arrow"></div>',
                 slidesToShow: 1,
                 slidesToScroll: 1
               }
