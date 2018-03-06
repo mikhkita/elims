@@ -8,6 +8,15 @@ body {
 
 /*---------------------*/
 
+.b-top-item .b-btn-red{
+	min-width: 203px;
+    padding: 17px 21px 19px 21px;
+}
+.b-address,
+.b-timetable{
+	padding-left: 26px;
+}
+
 .b-menu-list{
 	width: 100%;
 	display: table;
@@ -157,6 +166,33 @@ body {
 
 	.b-footer-menu{
 		display: none;
+	}
+
+	.b-top-list{
+		display: block;
+	}
+	.b-timetable,
+	.b-top-item .b-btn-red{
+		display: none;
+	}
+	.b-address,
+	.b-logo-cont{
+		float: left;
+	    display: inline-block;
+	    width: 33%;
+	}
+	.b-top-item.b-address:nth-child(2){
+		float: right;
+	}
+	.b-address-timetable{
+		display: block;
+	}
+	.b-address, .b-timetable {
+		padding-top: 16px;
+	    padding-left: 32px;
+	}
+	.b-top-item .icon-pin {
+	    top: 20px;
 	}
 }
 

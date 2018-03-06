@@ -460,7 +460,7 @@ h4{
 	font-size: 16px;
 	line-height: 24px;
 	padding-top: 22px;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 	.b-top-list{
 		width: 100%;
@@ -483,7 +483,7 @@ h4{
 				padding-right: 0;
 			}
 			.b-top-item .b-btn-red{
-				margin-top: 30px;
+				margin-top: 32px;
 				float: right;
 			}
 
@@ -496,16 +496,23 @@ h4{
 				top: 33px;
 				left: 0;
 			}
+			.b-address-timetable{
+				display: none;
+			}
 
-		.b-logo{
-			background-position: 50% 50%;
-		    background-repeat: no-repeat;
-		    background-image: url(../i/logo.svg);
-		    background-size: 140px;
-		    width: 140px;
-		    height: 110px;
-		    padding-top: 0;
+		.b-logo-cont{
+			text-align: center;
 		}
+			.b-logo{
+				display: inline-block;
+				background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-image: url(../i/logo.svg);
+			    background-size: 140px;
+			    width: 140px;
+			    height: 110px;
+			    padding-top: 0;
+			}
 		.b-timetable{
 			padding-top: 30px;
 			padding-left: 32px;
