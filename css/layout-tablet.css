@@ -12,8 +12,8 @@ body {
 	min-width: 203px;
     padding: 17px 21px 19px 21px;
 }
-.b-address,
-.b-timetable{
+.b-top .b-address,
+.b-top .b-timetable{
 	padding-left: 26px;
 }
 
@@ -80,6 +80,15 @@ body {
 }
 .b-specialists-item:nth-last-child(4){
 	margin-bottom: 44px;
+}
+.b-footer-address-item.b-timetable{
+	display: none;
+}
+.b-footer-address-item{
+	width: 33%;
+}
+.b-footer-address-item .b-address-timetable{
+	display: block;
 }
 	
 @media screen and (max-width: 1020px){
@@ -171,11 +180,11 @@ body {
 	.b-top-list{
 		display: block;
 	}
-	.b-timetable,
+	.b-top .b-timetable,
 	.b-top-item .b-btn-red{
 		display: none;
 	}
-	.b-address,
+	.b-top .b-address,
 	.b-logo-cont{
 		float: left;
 	    display: inline-block;
@@ -187,12 +196,29 @@ body {
 	.b-address-timetable{
 		display: block;
 	}
-	.b-address, .b-timetable {
+	.b-top .b-address,
+	.b-top .b-timetable {
 		padding-top: 16px;
 	    padding-left: 32px;
 	}
 	.b-top-item .icon-pin {
 	    top: 20px;
+	}
+
+	.b-footer-address-item{
+		width: 50%;
+		margin-bottom: 32px;
+	}
+	.b-footer-address-item .b-address-timetable{
+		display: none;
+	}
+	.b-footer-right .b-btn {
+	    float: left;
+	    margin-top: 5px;
+	}
+	.b-footer-address-item.b-timetable{
+		display: block;
+		margin-bottom: 0;
 	}
 }
 
@@ -219,5 +245,12 @@ body {
 	}
 	.b-specialists-item:nth-last-child(3){
 		margin-bottom: 44px;
+	}
+
+	.b-footer-copyright{
+		display: block;
+	}
+	.b-redder{
+		margin-top: 12px;
 	}
 }
