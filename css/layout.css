@@ -1270,7 +1270,7 @@ h4{
 
 	.b-header-back-white{
 		position: absolute;
-		bottom: 0;
+		bottom: -1px;
 		z-index: 5;
 		height: 180px;
 		width: 100%;
