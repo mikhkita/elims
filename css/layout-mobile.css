@@ -12,6 +12,11 @@ body {
 	padding: 40px 0 50px 0;
 }
 
+h1.b-title{
+	font-size: 36px;
+	line-height: 44px;
+}
+
 h2.b-title{
 	font-size: 32px;
 	line-height: 40px;
@@ -366,6 +371,10 @@ h2.b-title{
 
 	.b-block{
 		width: calc(100% - 32px);
+	}
+	h1.b-title{
+		font-size: 32px;
+		line-height: 40px;
 	}
 	h2, h2.b-title{
 		font-size: 24px;
