@@ -17,7 +17,7 @@ $(document).ready(function(){
             myHeight = document.body.clientHeight;
         }
 
-        if( myWidth > 1023 ){
+        if( myWidth > 1020 ){
             isDesktop = true;
             isTablet = false;
             isMobile = false;
@@ -198,7 +198,7 @@ $(document).ready(function(){
         },10);
     });
     
-    $(".b-reviews-list").slick({
+    $(".b-reviews-slider").slick({
         arrows: false,
         dots: false,
         infinite: false,
