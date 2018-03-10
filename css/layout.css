@@ -843,6 +843,9 @@ h4{
 					font-size: 15px;
 					line-height: 28px;
 				}
+					.b-services-item ul li:hover a{
+						text-decoration: underline;
+					}
 
 		.b-statistics{
 			float: right;
@@ -1139,6 +1142,9 @@ h4{
 		}
 		.read-more {
 			color: #3c5d9f;
+		}
+		.read-more:hover{
+			text-decoration: underline;
 		}
 
 .b-gray-block{
@@ -1494,7 +1500,7 @@ h4{
 
 }
 	.inner .b-reviews-list{
-		margin-bottom: 0;
+		
 	}
 		.inner .b-review{
 			text-align: left;
