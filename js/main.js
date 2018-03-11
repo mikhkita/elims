@@ -205,6 +205,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        //variableWidth: true,
         responsive: [
             {
               breakpoint: 1020,

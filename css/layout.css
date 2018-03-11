@@ -256,10 +256,12 @@ h4{
 }
 
 .icon-more:after{
-	content: "\e900";
-	font-size: 12px;
+	display: inline-block;
+    vertical-align: top;
+    content: "\e900";
+    font-size: 12px;
     color: #3c5d9f;
-    line-height: 26px;
+    line-height: 20px;
     margin-left: 10px;
 }
 
@@ -1241,11 +1243,18 @@ h4{
 			margin-bottom: 10px;
 		}
 		.read-more {
+			position: relative;
 			color: #3c5d9f;
+			padding-right: 28px;
 		}
 		.read-more:hover{
 			text-decoration: underline;
 		}
+			.icon-more{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
 
 .b-gray-block{
 	background-color: #f3f2f6;

@@ -301,6 +301,11 @@ h2.b-title{
 	margin-right: 0;
 }
 
+.b-side-right h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
 @media screen and (max-width: 665px){
 
 	.b-top-item.b-address{
