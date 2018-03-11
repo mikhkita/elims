@@ -201,7 +201,7 @@ body {
 	    display: inline-block;
 	    width: 33%;
 	}
-	.b-top-item.b-address:nth-child(2){
+	.b-top .b-address.b-address-2{
 		float: right;
 	}
 	.b-address-timetable{
