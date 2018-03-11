@@ -415,6 +415,9 @@ h2.b-title{
 		line-height: 32px;
 		margin-bottom: 8px;
 	}
+	.b-review-name h3{
+		margin-bottom: 0;
+	}
 	.b-statistics h2{
 		margin-bottom: 16px;
 	}
@@ -568,6 +571,9 @@ h2.b-title{
 	}
 	.b-services-content {
 	    width: calc(100% - 138px);
+	}
+	.b-photo-item {
+	    width: 100vw;
 	}
 
 }
