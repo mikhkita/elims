@@ -618,6 +618,22 @@ h2.b-title{
 	    margin-top: 28px;
 	}
 
+	.b-about-video{
+		height: 220px;
+	}
+	.b-video {
+	    top: calc(50% - 40px);
+	    left: calc(50% - 40px);
+	    width: 80px;
+	    height: 80px;
+	}
+	.b-video-play {
+	    top: 22px;
+	    left: 29px;
+	    border: 18px solid transparent;
+	    border-left: 36px solid #FFF;
+	}
+
 }
 
 @media screen and (max-width: 374px){
