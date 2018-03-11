@@ -236,6 +236,17 @@ body {
 	    font-size: 26px;
 	    line-height: 32px;
 	}
+	.b-top-item-inner{
+		padding-right: 0;
+	}
+	.b-top-item-inner{
+		position: relative;
+		float: right;
+	}
+	.b-top-item-inner .icon-pin{
+		top: 3px;
+		left: -32px;
+	}
 }
 
 @media screen and (max-width: 870px){

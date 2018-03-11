@@ -475,6 +475,9 @@ h2.b-title{
 		width: 100%;
 		margin-right: 0;
 	}
+	.specialist-img {
+	    height: 135vw;
+	}
 	.b-specialists-item:nth-last-child(2){
 		margin-bottom: 44px;
 	}
