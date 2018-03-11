@@ -229,7 +229,8 @@ h2.b-title{
 .b-about-header {
     display: inline-block;
 }
-.b-about-left p{
+.b-about-left p,
+.b-about-left .p{
 	text-align: left;
 }
 
