@@ -364,26 +364,29 @@ h4{
 
 /*---------inputs----------*/
 
-.b-input input{
-	width: 100%;
-	padding: 14px 24px;
-	border-radius: 3px;
-	border: 1px solid #FFF;
-	background-color: rgba(255, 255, 255, 0.3);
-	margin-bottom: 24px;
-	color: #FFF;
-	font-family: 'Ubuntu-Regular';
-	font-size: 16px;
-	line-height: 26px;
+.b-input{
+	position: relative;
 }
-.b-input.b-input-half{
-	float: left;
-	width: calc(50% - 12px);
-	margin-right: 24px;
-}
-.b-input.b-input-half:last-child{
-	margin-right: 0;
-}
+	.b-input input{
+		width: 100%;
+		padding: 14px 24px;
+		border-radius: 3px;
+		border: 1px solid #FFF;
+		background-color: rgba(255, 255, 255, 0.3);
+		margin-bottom: 24px;
+		color: #FFF;
+		font-family: 'Ubuntu-Regular';
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.b-input.b-input-half{
+		float: left;
+		width: calc(50% - 12px);
+		margin-right: 24px;
+	}
+	.b-input.b-input-half:last-child{
+		margin-right: 0;
+	}
 
 /*---------checkbox---------*/
 
@@ -1678,7 +1681,7 @@ h4{
 		min-width: 250px;
 	}
 	.b-popup-register{
-		overflow: hidden;
+		overflow: visible;
 	}
 		.b-popup-register h2{
 			margin-bottom: 40px;
@@ -1891,6 +1894,19 @@ h4{
 }
 .ui-datepicker .ui-datepicker-next:before{
     content: "\e900";
+}
+
+.hidden-datepicker {
+    width: 100%;
+    position: absolute !important;
+    line-height: 30px;
+    left: -5px;
+}
+
+.ui-datepicker {
+    position: absolute !important;
+    top: -24px !important;
+    left: 5px !important;
 }
 
 /*-----------Slideout-----------*/

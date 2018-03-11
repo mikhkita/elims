@@ -110,7 +110,7 @@ $(document).ready(function(){
         });
     }
 
-    
+
 
     var slideoutLeft = new Slideout({
         'panel': document.getElementById('panel-page'),
@@ -258,7 +258,11 @@ $(document).ready(function(){
 
         $(function(){
             $("#date").datepicker({
-                minDate: 0
+                minDate: 0,
+                beforeShow:function(input, inst){
+                    $('.hidden-datepicker').append($('#ui-datepicker-div'));
+                    $('#ui-datepicker-div').hide();    
+                }
             });
         });
 
