@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
 	<link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
 	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="css/layout-tablet.css">
@@ -36,7 +38,7 @@
 			<li><a href="contacts.html">Контакты</a></li>
 		</ul>
 		<div class="slideout-menu-padding">
-			<a href="#" class="b-btn b-btn-red">Записаться на прием</a>
+			<a href="#b-popup-register" class="fancy b-btn b-btn-red">Записаться на прием</a>
 		</div>
 	</div>
 	<div id="panel-page" class="panel-page slideout-panel">
@@ -75,7 +77,7 @@
 							</div>
 						</div>
 						<div class="b-top-item">
-							<a href="#" class="b-btn b-btn-red">Записаться на прием</a>
+							<a href="#b-popup-register" class="fancy b-btn b-btn-red">Записаться на прием</a>
 						</div>
 					</div>
 				</div>
@@ -94,7 +96,7 @@
 							<li><a href="price.html">Цены</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
-						<a href="#" class="b-btn b-btn-red">Записаться на прием</a>
+						<a href="#b-popup-register" class="fancy b-btn b-btn-red">Записаться на прием</a>
 					</div>
 				</div>
 			</div>
@@ -287,7 +289,7 @@
 					</div>
 				</div>
 				<div class="b-center">
-					<a href="#" class="b-btn b-btn-red">Записаться на прием</a>
+					<a href="#b-popup-register" class="fancy b-btn b-btn-red">Записаться на прием</a>
 				</div>
 			</div>
 
@@ -460,7 +462,7 @@
 								<div class="b-top-head">График работы:</div>
 								<div>Пн – Вс 09:00 – 20:00</div>
 							</div>
-							<a href="#" class="b-btn b-btn-red">Записаться на прием</a>
+							<a href="#b-popup-register" class="fancy b-btn b-btn-red">Записаться на прием</a>
 						</div>
 					</div>
 				</div>
@@ -499,15 +501,95 @@
 				</div>
 			</form>
 		</div>
+		<div class="b-popup b-popup-register" id="b-popup-register">
+			<h2>Запись на прием</h2>
+			<form id="b-form-register" class="b-form-register" action="kitsend.php" method="post">
+				<div class="b-input">
+					<input type="text" id="name" name="name" placeholder="Ваше имя" required/>
+				</div>
+				<div class="b-input">
+					<input type="text" id="phone" name="phone" placeholder="Ваш телефон" required/>
+				</div>
+				<div class="clearfix">
+					<div class="b-input b-input-half">
+						<input type="text" id="date" name="date" placeholder="Дата" required/>
+					</div>
+					<div class="b-input b-input-half b-input-time">
+						<input type="text" id="time" name="time" placeholder="Время" required/>
+						<div class="b-time-list">
+							<ul>
+								<li>
+									<input id="hour-9" type="radio" data-hour="9" name="time-select">
+									<label for="hour-9">09:00</label>
+								</li>
+								<li>
+									<input id="hour-10" type="radio" data-hour="10" name="time-select">
+									<label for="hour-10">10:00</label>
+								</li>
+								<li>
+									<input id="hour-11" type="radio" data-hour="11" name="time-select">
+									<label for="hour-11">11:00</label>
+								</li>
+								<li>
+									<input id="hour-12" type="radio" data-hour="12" name="time-select">
+									<label for="hour-12">12:00</label>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input id="hour-13" type="radio" data-hour="13" name="time-select">
+									<label for="hour-13">13:00</label>
+								</li>
+								<li>
+									<input id="hour-14" type="radio" data-hour="14" name="time-select">
+									<label for="hour-14">14:00</label>
+								</li>
+								<li>
+									<input id="hour-15" type="radio" data-hour="15" name="time-select">
+									<label for="hour-15">15:00</label>
+								</li>
+								<li>
+									<input id="hour-16" type="radio" data-hour="16" name="time-select">
+									<label for="hour-16">16:00</label>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input id="hour-17" type="radio" data-hour="17" name="time-select">
+									<label for="hour-17">17:00</label>
+								</li>
+								<li>
+									<input id="hour-18" type="radio" data-hour="18" name="time-select">
+									<label for="hour-18">18:00</label>
+								</li>
+								<li>
+									<input id="hour-19" type="radio" data-hour="19" name="time-select">
+									<label for="hour-19">19:00</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="b-checkbox">
+					<input id="checkbox-politics" type="checkbox" name="politics" checked required>
+					<label for="checkbox-politics">
+						<div class="b-checked icon-checked"></div>
+						<p>Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности</p>
+					</label>
+				</div>
+				<a href="#" class="b-btn b-btn-red ajax">Отправить заявку</a>
+				<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+			</form>
+		</div>
 		<div class="b-thanks b-popup" id="b-popup-success">
-			<h3>Спасибо!</h3>
-			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			<h2>Спасибо!</h2>
+			<p>Ваша заявка успешно отправлена. Наш менеджер свяжется с Вами в ближайшее время.</p>
+			<a href="#" class="b-btn b-btn-red" onclick="$.fancybox.close(); return false;">Закрыть</a>
 		</div>
 		<div class="b-thanks b-popup" id="b-popup-error">
-			<h3>Ошибка отправки!</h3>
-			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+			<h2>Ошибка отправки</h2>
+			<p>Не удалось отправить заявку.<br>Попробуйте повторить попытку или позвоните по номеру 40-30-20.</p>
+			<a href="#" class="b-btn b-btn-red" onclick="$.fancybox.close(); return false;">Закрыть</a>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -521,6 +603,8 @@
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/slideout.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/mask.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

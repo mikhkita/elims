@@ -374,6 +374,17 @@ h2.b-title{
 	    margin-top: 0;
 	}
 
+	.b-input.b-input-half{
+		width: 100%;
+	}
+
+	.b-time-list {
+	    width: 100%;
+	}
+	.b-time-list ul {
+	    width: calc(100%/3 - 15px);
+	}
+
 }
 
 @media screen and (max-width: 550px){

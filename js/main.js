@@ -238,6 +238,58 @@ $(document).ready(function(){
     $("body").on('click', '.next-slide', function(){
         $(".b-photo-slider").slick('slickNext');
     });
+
+    if($('#date').length){
+        $.datepicker.regional['ru'] = {
+            closeText: 'Готово', // set a close button text
+            currentText: 'Сегодня', // set today text
+            monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], // set month names
+            monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'], // set short month names
+            dayNames: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'], // set days names
+            dayNamesShort: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], // set short day names
+            dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], // set more short days names
+            dateFormat: 'dd.mm.yy', // set format date
+            firstDay: 1
+        };        
+        $.datepicker.setDefaults($.datepicker.regional["ru"]);
+
+        $(function(){
+            $("#date").datepicker({
+                minDate: 0
+            });
+        });
+
+        $("body").on('scroll mousewheel', '.fancybox-inner', function () {
+            //var inp = $(this).find('input.hasDatepicker');
+            //console.log(inp.offset().top, $("body").scrollTop(), inp.outerHeight());
+            //$('#ui-datepicker-div').css('top', inp.offset().top - $("body").scrollTop() + inp.outerHeight());
+        });
+    }
+
+    $('.b-input-time input').on('click focus', function(){
+        $('.b-time-list').addClass("show");
+    });
+
+    $(".b-time-list input").change(function(){
+         $('#time').val($(this).siblings("label").text());
+         $('.b-time-list').removeClass("show");
+    });
+
+    $(function(){
+      $(document).click(function(event){
+        if ($(event.target).closest(".b-input-time").length) 
+            return;
+        else{
+            $('.b-time-list').removeClass("show");
+        }
+        /*if ($(event.target).closest("#ui-datepicker-div").length) 
+            return;
+        else{
+            $('#ui-datepicker-div').hide();
+        }*/
+        event.stopPropagation();
+      });
+    });
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
