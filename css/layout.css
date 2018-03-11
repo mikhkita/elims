@@ -1695,6 +1695,7 @@ h4{
 }
 
 	.b-time-list{
+		overflow: hidden;
 		width: 270px;
 		z-index: 101;
 		padding: 18px 20px 22px;
