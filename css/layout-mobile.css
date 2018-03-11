@@ -250,7 +250,21 @@ h2.b-title{
     display: inline-block;
     width: 33%;
 }
-.b-top-item.b-address:nth-child(2){
+.b-top-item .icon-pin{
+	top: 20px;
+}
+.b-top-item{
+	padding-right: 0;
+}
+.b-top-item-inner{
+	position: relative;
+	float: right;
+}
+.b-top-item-inner .icon-pin{
+	top: 3px;
+	left: -32px;
+}
+.b-top .b-address.b-address-2{
 	float: right;
 }
 .b-address-timetable{
@@ -260,9 +274,6 @@ h2.b-title{
 .b-top .b-timetable {
 	padding-top: 16px;
     padding-left: 32px;
-}
-.b-top-item .icon-pin {
-    top: 20px;
 }
 
 .b-footer-copyright{
@@ -414,6 +425,9 @@ h2.b-title{
 		font-size: 18px;
 		line-height: 32px;
 		margin-bottom: 8px;
+	}
+	.b-review-name h3{
+		margin-bottom: 0;
 	}
 	.b-statistics h2{
 		margin-bottom: 16px;
@@ -568,6 +582,9 @@ h2.b-title{
 	}
 	.b-services-content {
 	    width: calc(100% - 138px);
+	}
+	.b-photo-item {
+	    width: 100vw;
 	}
 
 }

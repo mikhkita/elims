@@ -201,7 +201,7 @@ body {
 	    display: inline-block;
 	    width: 33%;
 	}
-	.b-top-item.b-address:nth-child(2){
+	.b-top .b-address.b-address-2{
 		float: right;
 	}
 	.b-address-timetable{
@@ -236,7 +236,7 @@ body {
 	    font-size: 26px;
 	    line-height: 32px;
 	}
-	.b-top-item-inner{
+	.b-top-item{
 		padding-right: 0;
 	}
 	.b-top-item-inner{
