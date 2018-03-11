@@ -487,6 +487,9 @@ h4{
 	.slideout-menu-padding {
 	    padding: 24px 24px 26px 24px;
 	}
+	div.slideout-menu-padding {
+	    padding-bottom: 94px;
+	}
 
 	.slideout-menu .b-btn-red{
 		width: 100%;
@@ -1898,7 +1901,7 @@ h4{
   bottom: 0;
   width: 300px;
   min-height: 100vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
@@ -1913,13 +1916,14 @@ h4{
 }
 
 .slideout-panel {
-  overflow-x: hidden;
   position: relative;
   z-index: 1;
+  will-change: transform;
   background-color: #FFF; /* A background-color is required */
   min-height: 100vh;
 }
 
+.slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
