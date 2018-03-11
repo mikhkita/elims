@@ -26,7 +26,8 @@ body {
 		float: none;
 		display: table-cell;
 	}
-		.b-menu-list li a{
+		.b-menu-list li a,
+		.b-menu-list li:last-child a{
 			padding: 15px 0 17px 0;
 		}
 

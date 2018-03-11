@@ -46,7 +46,7 @@ h2.b-title{
 .b-slider,
 .b-slider .slick-slide,
 .b-slider-content{
-	height: 560px;
+	height: 400px;
 }
 
 .b-services{
@@ -136,10 +136,10 @@ h2.b-title{
 }
 
 .b-slider-arrows.icon-left-arrow{
-	top: 200px;
+	top: 164px;
 }
 .b-slider-arrows.icon-right-arrow {
-    top: -360px;
+    top: -236px;
 }
 
 .b-review{
@@ -385,6 +385,11 @@ h2.b-title{
 	    width: calc(100%/3 - 15px);
 	}
 
+	.b-stock-content h3 {
+	    font-size: 24px;
+	    line-height: 30px;
+	}
+
 }
 
 @media screen and (max-width: 550px){
@@ -575,6 +580,34 @@ h2.b-title{
 	.inner .b-review-name {
 	    width: calc(100% - 136px);
 	    margin-left: 18px;
+	}
+
+	.b-stock-item {
+	    display: block;
+	}
+
+	.b-stock-content {
+	    display: block;
+	    padding-left: 0;
+	}
+
+	.b-stock-img{
+		width: 170px;
+		height: 170px;
+		margin-bottom: 24px;
+	}
+
+	.b-popup h2,
+	.b-popup-register h2 {
+	    margin-bottom: 24px;
+	}
+
+	.b-popup{
+		padding: 28px 32px 36px 32px;
+	}
+
+	.b-popup .b-btn {
+	    margin-top: 28px;
 	}
 
 }
