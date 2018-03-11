@@ -256,10 +256,12 @@ h4{
 }
 
 .icon-more:after{
-	content: "\e900";
-	font-size: 12px;
+	display: inline-block;
+    vertical-align: top;
+    content: "\e900";
+    font-size: 12px;
     color: #3c5d9f;
-    line-height: 26px;
+    line-height: 20px;
     margin-left: 10px;
 }
 
@@ -955,6 +957,7 @@ h4{
 			float: right;
 			width: 49%;
 			padding: 37px 44px 41px 44px;
+			margin-bottom: 40px;
 			border-radius: 3px;
 			color: #FFF;
 			background-image: url(../i/statistics-back.svg), -webkit-linear-gradient(135deg, #4769a7 0%, #3b4674 100%);
@@ -1040,6 +1043,7 @@ h4{
 
 			}
 			.b-about-video{
+				display: block;
 				position: relative;
 				width: 100%;
 				height: 295px;
@@ -1221,6 +1225,10 @@ h4{
 		width: calc(100%/3 - 16px);
 		margin-right: 24px;
 	}
+	.main .b-review{
+		margin-right: 0;
+		padding: 0 12px;
+	}
 	.b-review:nth-child(3n){
 		margin-right: 0;
 	}
@@ -1245,11 +1253,18 @@ h4{
 			margin-bottom: 10px;
 		}
 		.read-more {
+			position: relative;
 			color: #3c5d9f;
+			padding-right: 28px;
 		}
 		.read-more:hover{
 			text-decoration: underline;
 		}
+			.icon-more:after{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
 
 .b-gray-block{
 	background-color: #f3f2f6;

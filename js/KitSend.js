@@ -69,7 +69,25 @@ $(document).ready(function(){
 			$(this).find("#time").mask(teTime,{placeholder:"_"});
 		}
 		if( $(this).find("#date").length ){
-			$(this).find("#date").mask(teDates,{placeholder:"_"});
+			var dateMask = new IMask($(this).find("#date")[0], {
+			    mask: Date,
+			    min: new Date(2000, 0, 1),
+			    max: new Date(2025, 0, 1),
+			    prepare: function(value, masked){
+			    	var numbers = masked._value.replace(/[^0-9]+/g,"");
+
+			    	console.log(value);
+			    	if( value > 3 && masked._value.length == 0 || value > 1 && numbers.length == 2 ){
+			    		return "0"+value+".";
+			    	}
+
+			    	if( masked._value.length == 1 || masked._value.length == 4 ){
+			    		return value+".";	
+			    	}
+
+			    	return value;
+			    }
+			});
 		}
 		if( $(this).find("input[name=phone]").length ){
 			$(this).find("input[name=phone]").each(function(){

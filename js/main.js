@@ -97,7 +97,7 @@ $(document).ready(function(){
         }  
     };
 
-    if(isRetina && !isMobile){
+    if(isRetina || isMobile){
         $("*[data-retina]").each(function(){
             var $this = $(this),
                 img = new Image(),
@@ -109,6 +109,8 @@ $(document).ready(function(){
             img.src = src;
         });
     }
+
+    
 
     var slideoutLeft = new Slideout({
         'panel': document.getElementById('panel-page'),
@@ -205,6 +207,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         adaptiveHeight: true,
+        //variableWidth: true,
         responsive: [
             {
               breakpoint: 1020,

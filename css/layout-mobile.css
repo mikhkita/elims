@@ -301,6 +301,11 @@ h2.b-title{
 	margin-right: 0;
 }
 
+.b-side-right h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
 @media screen and (max-width: 665px){
 
 	.b-top-item.b-address{
@@ -470,6 +475,9 @@ h2.b-title{
 		width: 100%;
 		margin-right: 0;
 	}
+	.specialist-img {
+	    height: 135vw;
+	}
 	.b-specialists-item:nth-last-child(2){
 		margin-bottom: 44px;
 	}
@@ -608,6 +616,22 @@ h2.b-title{
 
 	.b-popup .b-btn {
 	    margin-top: 28px;
+	}
+
+	.b-about-video{
+		height: 220px;
+	}
+	.b-video {
+	    top: calc(50% - 40px);
+	    left: calc(50% - 40px);
+	    width: 80px;
+	    height: 80px;
+	}
+	.b-video-play {
+	    top: 22px;
+	    left: 29px;
+	    border: 18px solid transparent;
+	    border-left: 36px solid #FFF;
 	}
 
 }
