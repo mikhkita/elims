@@ -119,7 +119,7 @@ $(document).ready(function(){
 	whenScroll();
 
 	$(".fancy").each(function(){
-		var $popup = $($(this).attr("data-block")),
+		var $popup = $($(this).attr("href")),
 			$this = $(this);
 		$this.fancybox({
 			padding : 0,
