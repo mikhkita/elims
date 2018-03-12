@@ -247,6 +247,9 @@ body {
 		top: 3px;
 		left: -32px;
 	}
+	.slideout-panel {
+	  will-change: transform;
+	}
 }
 
 @media screen and (max-width: 870px){

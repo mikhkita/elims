@@ -317,6 +317,9 @@ h2.b-title{
     font-size: 26px;
     line-height: 32px;
 }
+.slideout-panel {
+  will-change: transform;
+}
 
 @media screen and (max-width: 665px){
 
