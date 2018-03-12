@@ -338,6 +338,9 @@ h2.b-title{
 .b-contacts {
     margin-bottom: 34px;
 }
+.specialist-img{
+	height: 65vw;
+}
 
 @media screen and (max-width: 665px){
 
@@ -507,17 +510,6 @@ h2.b-title{
 	    height: 120px;
 	}
 
-	.b-specialists-item{
-		width: 100%;
-		margin-right: 0;
-	}
-	.specialist-img {
-	    height: 135vw;
-	}
-	.b-specialists-item:nth-last-child(2){
-		margin-bottom: 44px;
-	}
-
 	.b-side-right{
 		text-align: center;
 	}
@@ -611,6 +603,13 @@ h2.b-title{
 	.b-map {
 	    height: 280px;
 	}
+	.b-specialists-item{
+		width: calc(100%/2 - 11px);
+		margin-right: 16px;
+	}
+	.b-specialists-item:nth-child(3n){
+		margin-right: 16px;
+	}
 
 }
 
@@ -674,6 +673,17 @@ h2.b-title{
 	    left: 29px;
 	    border: 18px solid transparent;
 	    border-left: 36px solid #FFF;
+	}
+
+	.b-specialists-item{
+		width: 100%;
+		margin-right: 0;
+	}
+	.specialist-img {
+	    height: 135vw;
+	}
+	.b-specialists-item:nth-last-child(2){
+		margin-bottom: 44px;
 	}
 
 }
