@@ -7,7 +7,13 @@ body {
 }
 
 /*---------------------------*/
-
+.b-header-back{
+	height: 200px;
+	background-size: 960px;
+}
+.b-header-back-white{
+	height: 120px;
+}
 .b-content{
 	padding: 40px 0 50px 0;
 }
@@ -425,8 +431,8 @@ h2.b-title{
 		width: calc(100% - 32px);
 	}
 	h1.b-title{
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 28px;
+		line-height: 36px;
 	}
 	h2, h2.b-title{
 		font-size: 24px;
