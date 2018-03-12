@@ -110,11 +110,9 @@ $(document).ready(function(){
         });
     }
 
-    /*$('.b-header-back').parallax({
-        speed: 0.5,
-        naturalWidth: 1000,
-        naturalHeight: 140
-    });*/
+    if($('.b-header-back').length){
+        $('.b-header-back').enllax();
+    }
 
     var slideoutLeft = new Slideout({
         'panel': document.getElementById('panel-page'),

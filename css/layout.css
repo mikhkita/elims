@@ -1434,9 +1434,8 @@ h4{
 	position: relative;
 	height: 265px;
 	width: 100%;
-	background-position: 50% 0;
+	background-position: 50% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 	.b-header-back-white{
