@@ -1661,7 +1661,7 @@ h4{
 /*-------Контакты-------*/
 
 .b-contacts{
-	margin-bottom: 45px;
+	/*margin-bottom: 45px;*/
 }
 	.b-contacts-left{
 		padding-right: 24px;
@@ -1669,11 +1669,16 @@ h4{
 	.b-contacts-left,
 	.b-contacts-right{
 		float: left;
-		width: 50%;
+	}
+	.b-contacts-left{
+		width: 400px;
+	}
+	.b-contacts-right{
+		width: calc(100% - 440px);
 	}
 	.b-map {
 	    width: 100%;
-	    height: 440px;
+	    height: 750px;
 	    border-radius: 3px;
 	}
 
