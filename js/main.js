@@ -212,7 +212,7 @@ $(document).ready(function(){
         //variableWidth: true,
         responsive: [
             {
-              breakpoint: 1020,
+              breakpoint: 1021,
               settings: {
                 arrows: true,
                 infinite: true,
