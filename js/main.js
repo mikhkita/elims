@@ -110,7 +110,10 @@ $(document).ready(function(){
         });
     }
 
-
+    /*$('.b-header-back').parallax({
+        speed: 0.5,
+        naturalWidth: '100%',
+    });*/
 
     var slideoutLeft = new Slideout({
         'panel': document.getElementById('panel-page'),
