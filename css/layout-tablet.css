@@ -91,6 +91,9 @@ body {
 .b-footer-address-item .b-address-timetable{
 	display: block;
 }
+.specialist-img{
+	height: 44vw;
+}
 	
 @media screen and (max-width: 1020px){
 
@@ -276,5 +279,8 @@ body {
 	}
 	.b-redder{
 		margin-top: 12px;
+	}
+	.specialist-img{
+		height: 65vw;
 	}
 }
