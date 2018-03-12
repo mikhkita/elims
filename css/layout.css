@@ -1655,6 +1655,25 @@ h4{
 						line-height: 30px;
 					}
 
+/*-------Контакты-------*/
+
+.b-contacts{
+	margin-bottom: 45px;
+}
+	.b-contacts-left{
+		padding-right: 24px;
+	}
+	.b-contacts-left,
+	.b-contacts-right{
+		float: left;
+		width: 50%;
+	}
+	.b-map {
+	    width: 100%;
+	    height: 440px;
+	    border-radius: 3px;
+	}
+
 /*---------Popup----------*/
 
 .b-popup{

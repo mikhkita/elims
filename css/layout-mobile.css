@@ -321,6 +321,18 @@ h2.b-title{
     background-image: url(../i/logo-mobile-footer@2x.png);
 }
 
+.b-contacts-left,
+.b-contacts-right{
+	float: none;
+	width: 100%;
+}
+.b-contacts-left{
+	margin-bottom: 24px;
+}
+.b-contacts {
+    margin-bottom: 34px;
+}
+
 @media screen and (max-width: 665px){
 
 	.b-top-item.b-address{
@@ -589,6 +601,9 @@ h2.b-title{
 	}
 	.b-photo-item {
 	    width: 100vw;
+	}
+	.b-map {
+	    height: 280px;
 	}
 
 }

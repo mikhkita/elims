@@ -267,12 +267,6 @@ $(document).ready(function(){
                 }
             });
         });
-
-        $("body").on('scroll mousewheel', '.fancybox-inner', function () {
-            //var inp = $(this).find('input.hasDatepicker');
-            //console.log(inp.offset().top, $("body").scrollTop(), inp.outerHeight());
-            //$('#ui-datepicker-div').css('top', inp.offset().top - $("body").scrollTop() + inp.outerHeight());
-        });
     }
 
     $('.b-input-time input').on('click focus', function(){
@@ -299,6 +293,30 @@ $(document).ready(function(){
         event.stopPropagation();
       });
     });
+
+    if($('.b-map').length){
+        var myPlace = new google.maps.LatLng(56.463328, 84.966415);
+        var myOptions = {
+            zoom: 17,
+            center: myPlace,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false,
+            zoomControl: true
+        }
+        var map = new google.maps.Map(document.getElementById("b-map"), myOptions);
+
+        var marker = new google.maps.Marker({
+            position: myPlace,
+            map: map,
+            icon: {
+                url: "/i/pin.svg",
+                scaledSize: new google.maps.Size(40, 58), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(17,53), // anchor
+            },
+        });
+    }
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
