@@ -317,6 +317,16 @@ h2.b-title{
     font-size: 26px;
     line-height: 32px;
 }
+.slideout-panel {
+  will-change: transform;
+}
+
+.b-logo {
+    background-image: url(../i/logo-mobile@2x.png);
+}
+.b-footer-logo {
+    background-image: url(../i/logo-mobile-footer@2x.png);
+}
 
 @media screen and (max-width: 665px){
 
