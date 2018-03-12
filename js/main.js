@@ -112,7 +112,8 @@ $(document).ready(function(){
 
     /*$('.b-header-back').parallax({
         speed: 0.5,
-        naturalWidth: '100%',
+        naturalWidth: 1000,
+        naturalHeight: 140
     });*/
 
     var slideoutLeft = new Slideout({
