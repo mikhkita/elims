@@ -515,7 +515,7 @@ h4{
 	.b-text p{
 		font-size: 16px;
 		line-height: 26px;
-		margin-bottom: 32px;
+		margin-bottom: 25px;
 	}
 		.b-text > *:last-child{
 			margin-bottom: 0;
@@ -544,10 +544,16 @@ h4{
 	.b-text h3 + ul,
 	.b-text h2 + ul,
 	.b-text h4 + ul,
+	.b-text p + ol,
 	.b-text h3 + ol,
 	.b-text h2 + ol,
-	.b-text h4 + ol{
+	.b-text h4 + ol,
+	.b-text p + ol{
 		margin-top: 0;
+	}
+	.b-text p + ul,
+	.b-text p + ol{
+		margin-top: -16px;
 	}
 		.b-text ul li{
 			position: relative;
