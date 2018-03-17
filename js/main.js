@@ -297,7 +297,7 @@ $(document).ready(function(){
     if($('.b-map').length){
         var myPlace = new google.maps.LatLng(56.487472, 84.971499);
         var myOptions = {
-            zoom: 13,
+            zoom: (isMobile)?12:13,
             center: myPlace,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,

@@ -1790,6 +1790,45 @@ h4{
 				.b-time-list ul li input:checked + label:hover{
 					color: #FFF;
 				}
+.b-price{
+
+}
+	.b-price h2{
+
+	}
+	.b-price ul{
+		width: 100%;
+		margin-bottom: 32px;
+	}
+		.b-price li{
+			line-height: 32px;
+			position: relative;
+		}
+			.b-price li:before{
+				position: absolute;
+				content: "s";
+				font-size: 0px;
+				width: 100%;
+				height: 0px;
+				left: 0px;
+				bottom: 10px;
+				border-bottom: 2px dotted #434343;
+			}
+			.b-price li span{
+				float: left;
+				background-color: #FFF;
+				position: relative;
+			}
+			.b-price li span:first-child{
+				max-width: calc(100% - 100px);
+				display: inline;
+				padding-right: 10px;
+			}
+			.b-price li span.b-right-col{
+				padding-left: 10px;
+				float: right;
+				text-align: right;
+			}
 
 .fancybox-close-small{
 	position: absolute;

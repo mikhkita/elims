@@ -52,7 +52,7 @@ h2.b-title{
 .b-slider,
 .b-slider .slick-slide,
 .b-slider-content{
-	height: 400px;
+	height: 500px;
 }
 
 .b-services{
@@ -145,7 +145,7 @@ h2.b-title{
 	top: 164px;
 }
 .b-slider-arrows.icon-right-arrow {
-    top: -236px;
+    top: -336px;
 }
 
 .b-review{
@@ -340,6 +340,9 @@ h2.b-title{
 }
 .specialist-img{
 	height: 65vw;
+}
+ul.b-breadcrumbs li:nth-child(3){
+	display: none;
 }
 
 @media screen and (max-width: 665px){
