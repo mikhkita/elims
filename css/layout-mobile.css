@@ -613,6 +613,9 @@ ul.b-breadcrumbs li:nth-child(3){
 	.b-specialists-item:nth-child(3n){
 		margin-right: 16px;
 	}
+	.b-specialists-item:nth-child(2n){
+		margin-right: 0;
+	}
 
 }
 
