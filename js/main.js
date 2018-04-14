@@ -188,8 +188,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 800,
-        autoplay: true,
-        autoplaySpeed: 5000,
+        // autoplay: true,
+        // autoplaySpeed: 5000,
         variableWidth: true,
         centerMode: true,
     });
@@ -295,9 +295,9 @@ $(document).ready(function(){
     });
 
     if($('.b-map').length){
-        var myPlace = new google.maps.LatLng(56.463328, 84.966415);
+        var myPlace = new google.maps.LatLng(56.487472, 84.971499);
         var myOptions = {
-            zoom: 17,
+            zoom: (isMobile)?12:13,
             center: myPlace,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,
@@ -307,14 +307,27 @@ $(document).ready(function(){
         var map = new google.maps.Map(document.getElementById("b-map"), myOptions);
 
         var marker = new google.maps.Marker({
-            position: myPlace,
+            position: new google.maps.LatLng(56.507232, 84.947133),
             map: map,
             icon: {
-                url: "/i/pin.svg",
+                url: "/bitrix/templates/main/html/i/pin.svg",
                 scaledSize: new google.maps.Size(40, 58), // scaled size
                 origin: new google.maps.Point(0,0), // origin
                 anchor: new google.maps.Point(17,53), // anchor
             },
+            title: "Клиника на Ленина"
+        });
+
+        var newMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(56.464336, 84.993934),
+            map: map,
+            icon: {
+                url: "/bitrix/templates/main/html/i/pin.svg",
+                scaledSize: new google.maps.Size(40, 58), // scaled size
+                origin: new google.maps.Point(0,0), // origin
+                anchor: new google.maps.Point(17,53), // anchor
+            },
+            title: "Клиника на Елизаровых"
         });
     }
     

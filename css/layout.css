@@ -750,7 +750,7 @@ h4{
 		}
 			.b-slider-content-item{
 				position: absolute;
-				bottom: 80px;
+				bottom: 60px;
 				width: 100%;
 				text-align: center;
 			}
@@ -1668,7 +1668,7 @@ h4{
 /*-------Контакты-------*/
 
 .b-contacts{
-	margin-bottom: 45px;
+	/*margin-bottom: 45px;*/
 }
 	.b-contacts-left{
 		padding-right: 24px;
@@ -1676,11 +1676,16 @@ h4{
 	.b-contacts-left,
 	.b-contacts-right{
 		float: left;
-		width: 50%;
+	}
+	.b-contacts-left{
+		width: 400px;
+	}
+	.b-contacts-right{
+		width: calc(100% - 440px);
 	}
 	.b-map {
 	    width: 100%;
-	    height: 440px;
+	    height: 750px;
 	    border-radius: 3px;
 	}
 
@@ -1792,6 +1797,55 @@ h4{
 				.b-time-list ul li input:checked + label:hover{
 					color: #FFF;
 				}
+.b-price{
+
+}
+	.b-price h2{
+
+	}
+	.b-price ul{
+		width: 100%;
+		margin-bottom: 32px;
+	}
+		.b-price li{
+			line-height: 24px;
+			position: relative;
+			margin-bottom: 8px;
+		}
+			.b-price li:before{
+				position: absolute;
+				content: "s";
+				font-size: 0px;
+				width: 100%;
+				height: 0px;
+				left: 0px;
+				bottom: 6px;
+				border-bottom: 2px dotted #adadad;
+			}
+			.b-price li div{
+				float: left;
+				position: relative;
+			}
+			.b-price li span{
+				background-color: #FFF;
+			}
+				.b-price li span:last-child{
+					padding-right: 10px;
+				}
+			.b-price li div:first-child{
+				max-width: calc(100% - 100px);
+				display: inline;
+				padding-right: 10px;
+			}
+			.b-price li div.b-right-col{
+				padding-left: 10px;
+				float: right;
+				text-align: right;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				background-color: #FFF;
+			}
 
 .fancybox-close-small{
 	position: absolute;

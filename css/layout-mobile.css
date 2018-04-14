@@ -48,11 +48,32 @@ h2.b-title{
 .b-menu-list{
 	display: none;
 }
-
+/*
 .b-slider,
 .b-slider .slick-slide,
 .b-slider-content{
-	height: 400px;
+	height: 500px;
+}
+*/
+.b-mobile-margin{
+	width: 100px;
+	height: 35px;
+}
+.b-slider-content{
+	height: 500px;
+}
+.b-slider-content .slick-slide{
+	height: 500px;
+}
+.b-slider-back{
+	height: 250px;
+}
+.b-slider-back .slick-slide{
+	height: 250px;
+}
+.b-slider-back-white{
+	bottom: 350px;
+    height: 100px;
 }
 
 .b-services{
@@ -142,10 +163,10 @@ h2.b-title{
 }
 
 .b-slider-arrows.icon-left-arrow{
-	top: 164px;
+	top: 234px;
 }
 .b-slider-arrows.icon-right-arrow {
-    top: -236px;
+    top: -266px;
 }
 
 .b-review{
@@ -340,6 +361,9 @@ h2.b-title{
 }
 .specialist-img{
 	height: 65vw;
+}
+ul.b-breadcrumbs li:nth-child(3){
+	display: none;
 }
 
 @media screen and (max-width: 665px){
@@ -601,7 +625,7 @@ h2.b-title{
 	    width: 100vw;
 	}
 	.b-map {
-	    height: 280px;
+	    height: 660px;
 	}
 	.b-specialists-item{
 		width: calc(100%/2 - 11px);
@@ -692,7 +716,6 @@ h2.b-title{
 }
 
 @media screen and (max-width: 374px){
-
 	.icon-situation:before{
 		font-size: 44px;
 		line-height: 62px;
@@ -709,7 +732,6 @@ h2.b-title{
 		font-size: 62px;
     	line-height: 76px;
 	}
-
 	.b-about-img {
 	    vertical-align: top;
 	    width: 78px;
