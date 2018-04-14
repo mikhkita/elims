@@ -743,7 +743,7 @@ h4{
 		}
 			.b-slider-content-item{
 				position: absolute;
-				bottom: 80px;
+				bottom: 60px;
 				width: 100%;
 				text-align: center;
 			}
@@ -1801,8 +1801,9 @@ h4{
 		margin-bottom: 32px;
 	}
 		.b-price li{
-			line-height: 32px;
+			line-height: 24px;
 			position: relative;
+			margin-bottom: 8px;
 		}
 			.b-price li:before{
 				position: absolute;
@@ -1811,23 +1812,32 @@ h4{
 				width: 100%;
 				height: 0px;
 				left: 0px;
-				bottom: 10px;
-				border-bottom: 2px dotted #434343;
+				bottom: 6px;
+				border-bottom: 2px dotted #adadad;
 			}
-			.b-price li span{
+			.b-price li div{
 				float: left;
-				background-color: #FFF;
 				position: relative;
 			}
-			.b-price li span:first-child{
+			.b-price li span{
+				background-color: #FFF;
+			}
+				.b-price li span:last-child{
+					padding-right: 10px;
+				}
+			.b-price li div:first-child{
 				max-width: calc(100% - 100px);
 				display: inline;
 				padding-right: 10px;
 			}
-			.b-price li span.b-right-col{
+			.b-price li div.b-right-col{
 				padding-left: 10px;
 				float: right;
 				text-align: right;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				background-color: #FFF;
 			}
 
 .fancybox-close-small{

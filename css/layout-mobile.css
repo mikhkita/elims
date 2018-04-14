@@ -48,11 +48,32 @@ h2.b-title{
 .b-menu-list{
 	display: none;
 }
-
+/*
 .b-slider,
 .b-slider .slick-slide,
 .b-slider-content{
 	height: 500px;
+}
+*/
+.b-mobile-margin{
+	width: 100px;
+	height: 35px;
+}
+.b-slider-content{
+	height: 500px;
+}
+.b-slider-content .slick-slide{
+	height: 500px;
+}
+.b-slider-back{
+	height: 250px;
+}
+.b-slider-back .slick-slide{
+	height: 250px;
+}
+.b-slider-back-white{
+	bottom: 350px;
+    height: 100px;
 }
 
 .b-services{
@@ -142,10 +163,10 @@ h2.b-title{
 }
 
 .b-slider-arrows.icon-left-arrow{
-	top: 164px;
+	top: 234px;
 }
 .b-slider-arrows.icon-right-arrow {
-    top: -336px;
+    top: -266px;
 }
 
 .b-review{
@@ -695,7 +716,6 @@ ul.b-breadcrumbs li:nth-child(3){
 }
 
 @media screen and (max-width: 374px){
-
 	.icon-situation:before{
 		font-size: 44px;
 		line-height: 62px;
@@ -712,7 +732,6 @@ ul.b-breadcrumbs li:nth-child(3){
 		font-size: 62px;
     	line-height: 76px;
 	}
-
 	.b-about-img {
 	    vertical-align: top;
 	    width: 78px;
