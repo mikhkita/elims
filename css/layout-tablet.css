@@ -212,6 +212,10 @@ body {
 	.b-top-item .icon-pin {
 	    top: 20px;
 	}
+	.b-top-item-inner .icon-phone{
+		left: -28px;
+		top: 5px;
+	}
 
 	.b-footer-address-item{
 		width: 50%;
