@@ -52,7 +52,7 @@ body {
 		}
 
 .b-statistics {
-    width: calc(100%/3*2 - 9px);
+    width: 100%;
 }
 
 .b-photo-item{

@@ -110,6 +110,25 @@ h2.b-title{
 	.b-statistics-item {
 	    margin-bottom: 24px;
 	}
+		.b-statistics-third{
+			width: 49%;
+		}
+		.b-statistics-third:last-child{
+			width: 49%;
+		}
+		.b-statistics-half:first-child{
+			width: 100%;
+			padding-right: 0;
+		}
+		.b-statistics-half:last-child{
+			width: 100%;
+		}
+		.b-statistics-line:last-child .b-statistics-item{
+			margin-bottom: 24px;
+		}
+		.b-statistics-line:last-child .b-statistics-item:last-child{
+			margin-bottom: 0;
+		}
 
 .b-about{
 	padding: 50px 0;
@@ -454,6 +473,13 @@ ul.b-breadcrumbs li:nth-child(3){
 	    font-size: 24px;
 	    line-height: 30px;
 	}
+	
+	.b-statistics-third{
+		width: 100%;
+	}
+	.b-statistics-third:last-child{
+		width: 100%;
+	}
 
 }
 
@@ -643,7 +669,7 @@ ul.b-breadcrumbs li:nth-child(3){
 @media screen and (max-width: 450px){
 
 	.b-statistics {
-	    padding: 20px;
+	    padding: 24px;
 	}
 	.main .b-review {
 	    padding: 0 36px;

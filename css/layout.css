@@ -369,6 +369,27 @@ h4{
     line-height: 16px;
 }
 
+.icon-child:before{
+	content: "\e918";
+	font-size: 36px;
+    color: #FFF;
+    line-height: 36px;
+}
+
+.icon-micro:before{
+	content: "\e917";
+	font-size: 40px;
+    color: #FFF;
+    line-height: 40px;
+}
+
+.icon-frame:before{
+	content: "\e916";
+	font-size: 36px;
+    color: #FFF;
+    line-height: 36px;
+}
+
 /*---------inputs----------*/
 
 .b-input{
@@ -975,8 +996,8 @@ h4{
 
 		.b-statistics{
 			float: right;
-			width: 49%;
-			padding: 37px 44px 41px 44px;
+			width: 74.5%;
+			padding: 37px 35px 48px 35px;
 			margin-bottom: 40px;
 			border-radius: 3px;
 			color: #FFF;
@@ -991,40 +1012,52 @@ h4{
 			.b-statistics h2{
 				color: #FFF;
 			}
-			.b-statistics-item{
-				position: relative;
-				padding-left: 58px;
-				margin-bottom: 30px;
+			.b-statistics-line{
+
 			}
-			.b-statistics-item:last-child{
+			.b-statistics-line:last-child .b-statistics-item{
 				margin-bottom: 0;
 			}
-			.b-statistics-half:first-child{
-				float: left;
-				width: 53%;
-				padding-right: 20px;
-			}
+				.b-statistics-item{
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					padding-left: 58px;
+					margin-bottom: 30px;
+				}
+				.b-statistics-third{
+					width: calc(100%/3 - 15px);
+					padding-right: 20px;
+				}
+				.b-statistics-third:last-child{
+					width: calc(100%/3 + 22px);
+				}
+				.b-statistics-half{
+					margin-bottom: 18px;
+				}
+				.b-statistics-half:first-child{
+					width: 48%;
+					padding-right: 30px;
+				}
 
-			.b-statistics-half:last-child{
-				float: left;
-				width: 47%;
-				padding-left: 50px;
-			}
-				.b-statistics-icon{
-					position: absolute;
-					top: 5px;
-					left: 0;
-					opacity: 0.8;
+				.b-statistics-half:last-child{
+					width: 51%;
 				}
-				.b-statistics-item h3{
-					color: #FFF;
-					margin-bottom: 0;
-				}
-				.b-statistics-item p,
-				.b-statistics-item .p{
-					font-size: 14px;
-					line-height: 22px;
-				}
+					.b-statistics-icon{
+						position: absolute;
+						top: 5px;
+						left: 0;
+						opacity: 0.8;
+					}
+					.b-statistics-item h3{
+						color: #FFF;
+						margin-bottom: 0;
+					}
+					.b-statistics-item p,
+					.b-statistics-item .p{
+						font-size: 14px;
+						line-height: 22px;
+					}
 
 .b-about{
 	padding: 90px 0 70px 0;
